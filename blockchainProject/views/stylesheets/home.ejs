@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EROS-ANTEROS</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Raleway", sans-serif;
+      }
+
+      body,
+      html {
+        height: 100%;
+        line-height: 1.8;
+      }
+
+      /* Full height image header */
+      .bgimg-1 {
+        background-position: center;
+        background-size: cover;
+        background-image: url("https://images.unsplash.com/photo-1639322537228-f710d846310a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80");
+        min-height: 100%;
+      }
+
+      .w3-bar .w3-button {
+        padding: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar w3-white w3-card" id="myNavbar">
+        <a href="/" class="w3-bar-item w3-button w3-wide">EROS-ANTEROS</a>
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small">
+          <a href="#team" class="w3-bar-item w3-button">TEAM</a>
+          <!-- <!-- <a href="#team" class="w3-bar-item w3-button"
+            ><i class="fa fa-user"></i> TEAM</a
+          > -->
+          <a href="/transfer" class="w3-bar-item w3-button"
+            ></i>TRANSFER NFTs</a
+          >
+          <a href="#pricing" class="w3-bar-item w3-button">MINT NFTs</a>
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+        <a
+          href="javascript:void(0)"
+          class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+          onclick="w3_open()"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav
+      class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+      style="display: none"
+      id="mySidebar"
+    >
+      <a
+        href="javascript:void(0)"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button w3-large w3-padding-16"
+        >Close ×</a
+      >
+      <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button"
+        >ABOUT</a
+      >
+      <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button"
+        >TEAM</a
+      >
+      <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button"
+        >WORK</a
+      >
+      <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button"
+        >PRICING</a
+      >
+      <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button"
+        >CONTACT</a
+      >
+    </nav>
+
+    <!-- Header with full-height image -->
+    <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+      <div class="w3-display-left w3-text-white" style="padding: 48px">
+        <span class="w3-jumbo w3-hide-small">Authenticity matters</span><br />
+        <span class="w3-xxlarge w3-hide-large w3-hide-medium"
+          >Authenticity matters</span
+        ><br />
+        <span class="w3-large"
+          >Eliminate counterfeit goods using blockchain technology.</span
+        >
+        <p>
+          <!-- <a
+            href="#about"
+            class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off"
+            >Learn more and start today</a
+          > -->
+        </p>
+      </div>
+      <div
+        class="w3-display-bottomleft w3-text-grey w3-large"
+        style="padding: 24px 48px"
+      ></div>
+    </header>
+
+    <!-- About Section -->
+    <div class="w3-container" style="padding: 128px 16px" id="about">
+      <h3 class="w3-center">ABOUT THE COMPANY</h3>
+      <p class="w3-center w3-large">Key features of our company</p>
+      <div class="w3-row-padding w3-center" style="margin-top: 64px">
+        <div class="w3-quarter">
+          <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+          <p class="w3-large">Technology</p>
+          <p>
+            We make use of the latest developments in blockchain technology to
+            eliminate counterfeit goods
+          </p>
+        </div>
+        <div class="w3-quarter">
+          <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+          <p class="w3-large">Passion</p>
+          <p>
+            The world works due to passion, and rest assured that we are
+            dedicated to provide you with the best services
+          </p>
+        </div>
+        <div class="w3-quarter">
+          <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+          <p class="w3-large">Design</p>
+          <p>
+            We have a very streamlined process that makes generation of QR code
+            and NFT linking very easy
+          </p>
+        </div>
+        <div class="w3-quarter">
+          <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+          <p class="w3-large">Support</p>
+          <p>
+            We are always there to help and assist you to our best potential
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team Section -->
+    <div
+      class="w3-light-grey d-flex justify-content-around"
+      style="padding: 128px 16px"
+      id="team"
+    >
+      <h3 class="w3-center">THE TEAM</h3>
+      <div class="w3-row-padding d-flex justify-content-around" style="margin-top: 64px; display:flex; justify-content: space-around;">
+        <div class="w3-margin-bottom w3-container w3-cell" style="width: 45%;">
+          <div class="w3-card">
+            <!-- <img src="/w3images/team1.jpg" alt="Jane" style="width: 100%" /> -->
+            <div class="w3-container">
+              <h3 class="w3-center">Omkar Gothankar</h3>
+              <p class="w3-opacity w3-center">2020A7PS0991P</p>
+              <p>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w3-margin-bottom w3-container w3-cell" style="width: 45%;">
+          <div class="w3-card">
+            <!-- <img src="/w3images/team3.jpg" alt="Mike" style="width: 100%" /> -->
+            <div class="w3-container d-flex justify-content-center">
+              <h3 class="w3-center">Adarsh Goel</h3>
+              <p class="w3-opacity w3-center">2020ABPS0635P</p>
+              <p>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Promo Section "Statistics" -->
+    <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+      <div class="w3-quarter">
+        <span class="w3-xxlarge">14+</span>
+        <br />Partners
+      </div>
+      <div class="w3-quarter">
+        <span class="w3-xxlarge">55+</span>
+        <br />Projects Done
+      </div>
+      <div class="w3-quarter">
+        <span class="w3-xxlarge">89+</span>
+        <br />Happy Clients
+      </div>
+      <div class="w3-quarter">
+        <span class="w3-xxlarge">150+</span>
+        <br />Meetings
+      </div>
+    </div>
+
+    <!-- Work Section -->
+    <div class="w3-container" style="padding: 128px 16px" id="work">
+      <h3 class="w3-center">OUR WORK</h3>
+      <p class="w3-center w3-large">These are a few popular NFTs that we provided to our customers</p>
+
+      <div class="w3-row-padding" style="margin-top: 64px">
+        <div class="w3-col l3 m6">
+          <img
+            src="https://lh3.googleusercontent.com/OPQBv0C_c5MYhocYTZsFAq-r8-NqGDYv1qipHiiAD3gLTeoM_qWcLDVLKWcNpzCHoLMkMHBykLacsSUTzutlMwJohXjq_iFP26h9=w600"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="A microphone"
+          />
+        </div>
+        <div class="w3-col l3 m6">
+          <img
+            src="https://lh3.googleusercontent.com/u-2FnHbaJ3U_KCDlmg2McX9Yfo7brsAzOffqihNXCGkHljA89SPPzwdjQiVSWcsvxCoj_ydBcDNCuZvHEekaYekaMEH4XX32k9US=w600"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="A phone"
+          />
+        </div>
+        <div class="w3-col l3 m6">
+          <img
+            src="https://lh3.googleusercontent.com/uk_DffZl4yOQHwnr-B6mVg3pg_JJCynj6irOdSYkckcNrFK5n0fZ98JR8jgJKCaiDF1QYvjeW4_tGZDgyS1tl4g0Cg5WQ4xhLwGK=w600"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="A drone"
+          />
+        </div>
+        <div class="w3-col l3 m6">
+          <img
+            src="https://lh3.googleusercontent.com/U-UfVXTSDUUkPLNpYDeT2AjCX9rCYXvzeofQ9yDPzK4Dd968qjguxJSsiWLHA70BBZttTfUeh2Dy8UIBy5sh26fuawqyOkXuppELnw=w600"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="Soundbox"
+          />
+        </div>
+      </div>
+
+      <div class="w3-row-padding w3-section">
+        <div class="w3-col l3 m6">
+          <img
+            src="https://lh3.googleusercontent.com/I_2IegmgFagoBcxfm0SUxVwmarV5w3kAV3kn-pWxXfwfCrowffsfDz1MxUXWGcrLYn3dyg00prhDv7139-fdNyXxhKNb3yqoJYhoyQ=w600"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="A tablet"
+          />
+        </div>
+        <div class="w3-col l3 m6">
+          <img
+            src="https://lh3.googleusercontent.com/TEiMnY2Cvj4DLTMkzLxfJXjso9y9AH3Uqw7EQifZ8fDGD45v_Jhbn8Qi1oXuZhl2Rnh5drOgC6YYzP5Z-LWgW2nxo25TpWTQVsKCgQ=w600"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="A camera"
+          />
+        </div>
+        <div class="w3-col l3 m6">
+          <img
+            src="https://lh3.googleusercontent.com/hyGF7G_op4Zttr3v_uo-8Rl9ckzjGF2syYTazI8QRZpPscgWVV4dOZoWe3M3Aa4T9DsptwAkvBj9mRFhxUmz0EyVcmx27o9yEMsLr8o=w600"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="A typewriter"
+          />
+        </div>
+        <div class="w3-col l3 m6">
+          <img
+            src="https://lh3.googleusercontent.com/MnE93SaacU33rsEJGUmqn8lQR0OVvo8YVZ8Vzp3LPtYygbHxeTXnw4dHggOXwGokNvTjlohXezhFoG_DBLycUhfqynKlepGTW7u9=w600"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="A tableturner"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div
+      id="modal01"
+      class="w3-modal w3-black"
+      onclick="this.style.display='none'"
+    >
+      <span
+        class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright"
+        title="Close Modal Image"
+        >×</span
+      >
+      <div
+        class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64"
+      >
+        <img id="img01" class="w3-image" />
+        <p id="caption" class="w3-opacity w3-large"></p>
+      </div>
+    </div>
+
+    <!-- Pricing Section -->
+    <div
+      class="w3-dark-grey d-flex justify-content-around"
+      style="padding: 128px 16px"
+      id="pricing"
+    >
+      <h3 class="w3-center">PRICING</h3>
+      <p class="w3-large w3-center">Choose a plan that fits your needs.</p>
+      <div class="w3-row-padding d-flex justify-content-around" style="margin-top: 64px; display:flex; justify-content: space-around;">
+        <div class="" style="width: 45%;">
+          <ul class="w3-ul w3-white w3-hover-shadow">
+            <li class="w3-black w3-xlarge w3-padding-32 w3-center">Deploy NFTs directly to customer</li>
+            <li class="w3-padding-16 w3-center"><b>Testnets</b>, <b>Ethereum</b>, <b>Polygon</b> Networks </li>
+            <li class="w3-padding-16 w3-center">
+              <h2 class="w3-wide">$ 0.0</h2>
+              <span class="w3-opacity">per NFT</span>
+            </li>
+            <li class="w3-light-grey w3-padding-24 w3-center">
+              <a class="w3-button w3-black w3-padding-large" href="/newProducts" role="button">Mint</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64">
+      <a href="#home" class="w3-button w3-light-grey"
+        ><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a
+      >
+    </footer>
+
+
+    
+    <script>
+      // Modal Image Gallery
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+      }
+
+      // Toggle between showing and hiding the sidebar when clicking the menu icon
+      var mySidebar = document.getElementById("mySidebar");
+
+      function w3_open() {
+        if (mySidebar.style.display === "block") {
+          mySidebar.style.display = "none";
+        } else {
+          mySidebar.style.display = "block";
+        }
+      }
+
+      // Close the sidebar with the close button
+      function w3_close() {
+        mySidebar.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
